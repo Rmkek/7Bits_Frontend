@@ -1,4 +1,10 @@
+.body {
+    width: 1200px;
+    height: 3518px;
+}
+
 .header__minimo {
+    cursor: pointer;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -17,12 +23,12 @@
     display: inline;
 }
 
-ul {
+.header__list_elem{
     padding-top: 70px;
     margin-top: 70px;
     display: inline;
 }
-li {
+.header__list {
     list-style-type: none;
     overflow: hidden;
     margin-left: 373px;
@@ -41,16 +47,17 @@ li {
     cursor:pointer;
 }
 
-.main__photo {
+.header__main-photo {
     margin-top: 68px;
     margin-left: 70px;
 }
 
-.main__section {
+.article {
     margin-left: 70px;
 }
 
 .article__theme {
+    display: block;
     text-transform: uppercase;
     font-family: 'Ubuntu';
     font-size: 14px;
@@ -65,19 +72,19 @@ li {
     margin-top: 35px;
 }
 
-.article__main__text {
+.article__main-text {
     margin-top: 40px;
-    font: 400 14px / 24px PlayfairDisplay;
+    font: 400 14px / 24px 'PlayfairDisplay';
     color: #626262;
 }
 
-.about__me {
+.about-me {
     width:280px;
     display: block;
     float: right;
     margin-top: 100px;
     padding-left: 130px;
-    margin-right: 216px;
+    margin-right: 70px;
 }
 
 .container::after {
@@ -86,7 +93,7 @@ li {
     clear:both;
 }
 
-.aside__header {
+.about-me__header {
     display: block;
     margin-top: 200px;
     margin-left: 3px;
@@ -94,7 +101,7 @@ li {
     color: #626262;
 }
 
-.about__me__text {
+.about-me__text {
     float:right;
     font: 400 12px / 20px PlayfairDisplay;
     color: #626262;
@@ -104,7 +111,7 @@ li {
     margin-top: 10px;
 }
 
-.about__me__image {
+.about-me__image {
     float: right;
 }
 
@@ -112,15 +119,15 @@ li {
     padding-left: 20px;
 }
 
-.main__section__first__image {
-    margin-top: -550px
+.article__main_first-image {
+    margin-top: -23522px;
 }
 
-.main__section__images {
+.article__main_images {
     padding-top: 50px;
 }
 
-.aside__header__posts {
+.about-me__header_posts {
     display: block;
     font: 300 14px 'Ubuntu';
     height: 11px;
@@ -129,11 +136,12 @@ li {
     text-transform: uppercase;
 }
 
-.aside__list {
-    margin-top: -50px;
-    font: 400 16px 'PlayfairDisplay';
+.about-me__list {
+    display: block;
+    margin-top: 10px;
+    font: 400 16px PlayfairDisplay;
     color: #626262;
-    margin-left: -37px;
+    margin-left: 10px;
     list-style-type: circle;
 }
 
@@ -160,7 +168,7 @@ li {
     margin-left: -175px;
 }
 
-.blockquote {
+.article__main_blockquote {
     float: left;
     color: #626262;
     font: italic 14px / 24px 'PlayfairDisplay';
@@ -169,7 +177,7 @@ li {
     margin-left: 20px;
 }
 
-.underquote {
+.article__main_underquote {
     float: left;
     color: #626262;
     font: 400 14px / 24px 'PlayfairDisplay';
@@ -178,6 +186,7 @@ li {
 }
 
 .share__button {
+    display: block;
     text-transform: uppercase;
     font: 300 13px / 24px 'Ubuntu';
     color: #b4ad9e;
@@ -186,30 +195,30 @@ li {
     margin-left: 590px;
 }
 
-.buttonFirst {
+.button__first {
     position: absolute;
     cursor: pointer;
     margin-top: 950px;
 }
-.buttonSecond {
+.button__second {
     position: absolute;
     cursor: pointer;
     margin-left: 30px;
     margin-top: 953px;
 }
-.buttonThird {
+.button__third {
     position: absolute;
     cursor: pointer;
     margin-left: 60px;
     margin-top: 950px;
 }
-.buttonFourth {
+.button__fourth {
     position: absolute;
     cursor: pointer;
     margin-left: 90px;
     margin-top: 950px;
 }
-.buttonFifth {
+.button__fifth {
     position: absolute;
     cursor: pointer;
     margin-left: 120px;
@@ -217,18 +226,18 @@ li {
 }
 
 .footer {
-    padding-top: 40px;
-    position: fixed;
-    left: 0; bottom: 0; 
+    top: 524%;
+    padding-top: 29px;
+    position: absolute;
     font: 400 14px / 24px 'PlayfairDisplay';
     color: #000000;
     width: 100%; 
-    height: 57px;
+    height: 56px;
     background-color: #d9d9d9;
 }
 
-.Terms {
-    margin-top:40px;
+.footer__terms {
+    cursor: pointer;
     display:inline;
     font: 400 14px / 24px 'PlayfairDisplay';
     color: #000000;
@@ -236,15 +245,17 @@ li {
     margin-left: 71px;  
 }
 
-.Privacy {
+.footer__privacy {
+    cursor: pointer;
     font: 400 14px / 24px 'PlayfairDisplay';
     color: #000000;
     margin-left: 20px;
     font-weight: bold;
+    text-align: center;
     display: inline;
 }
 
-.Follow {
+.footer__follow {
     font-weight: bold;
     margin-left: 720px;
     color: #000000;
@@ -254,4 +265,30 @@ li {
 
 .footer__image {
     padding-left: 10px; 
+}
+.about-me__comments {
+    margin-left: 10px;
+    display: block;
+    font: 300 12px 'Ubuntu';
+    color: #b4ad9e;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.about-me__list_radio-button-first {
+    display: inline;
+    position: absolute;
+    margin-top: 20px;
+}
+
+.about-me__list_radio-button-second {
+    display: inline;
+    position: absolute;
+    margin-top: 74px;
+}
+
+.about-me__list_radio-button-third {
+    display: inline;
+    position: absolute;
+    margin-top: 127px;
 }
