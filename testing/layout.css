@@ -1,0 +1,30 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #F5F5F5;
+  font: 18px sans-serif;
+  color: #434343;
+}
+
+.header {
+
+}
+.header__container {
+  width: 1000px;
+  margin: auto;
+  padding: 40px;
+  box-sizing: border-box;
+  background: rgba(162, 226, 251, 0.8);
+}
+.footer {
+  background: rgba(162, 226, 251, 0.8);
+}
+.footer__container {
+  width: 1000px;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 40px;
+}
