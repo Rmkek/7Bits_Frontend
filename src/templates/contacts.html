@@ -1,17 +1,6 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
-    <link href="styles/style.css" rel="stylesheet">
-    <title>Contact Us</title>
-</head>
-    
-<body>
-    
-    {% block header %}
-    {% endblock %}
-    
+{% extends "layout.html" %} 
+
+{% block main %}
     <section class="contact">
         <h1 class="contact__header">Contact Us</h1>
         <p class="contact__text">Nam in maximus arcu, ac aliquam tellus. Donec vestibulum ipsum nunc, at placerat ante posuere non. Integer at dui a lacus suscipit elementum id non massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc eu neque eros. Ut eu quam justo.</p>
@@ -25,8 +14,4 @@
             <button class="form__send">SEND MESSAGE</button>
         </form>
     </section>
-    
-    {% block footer %}
-    {% endblock %}
-</body>
-</html>
+{% endblock %}

@@ -1,23 +1,76 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>7bits-frontend-2016</title>
-    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
-  </head>
-  <body>
-    {% block header %}
-    {% endblock %}
-    <header class="header">
-      <div class="header__container">
-        Header
-      </div>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <meta name="keywords" content="Reads, Palo Alto">
+    <meta name="description" content="Palo Alto stories to read">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico" sizes="16x16"/>
+</head>
+<body>  
+<header class="header">
+        <a href="#"><img src="images/Palo-Alto.png" alt="logo"></a>
+        <ul class="menu">
+                <li class="menu__elem menu__elem_search"/>
+                <li class="menu__elem menu__elem_disabled">
+                    <span>contacts</span>
+                </li>
+                <li class="menu__elem">
+                    <span>archive</span>
+                </li>
+                <li class="menu__elem">
+                    <span>about</span>
+                </li>
+                <li class="menu__elem">
+                    <span>home</span>
+                </li>
+                <div class="clearfix"/>
+            </ul>
+        <div class="clearfix"/>
+</header>
+    
 
-    <footer class="footer">
-      <div class="footer__container">
-        Footer
-      </div>
+    {% block main %}
+    {% endblock %}
+
+    
+<footer class="footer">
+        <a href="index.html"><img class="footer-logo" src="images/Palo-Alto-footer.png" alt="logo"></a>
+        <ul class="footer__menu">
+            <li class="footer__menu-elem footer__menu-elem_disabled">
+                <a class="footer__menu-elem_clickable" href="index.html"><span>home</span></a>
+            </li>
+            <li class="footer__menu-elem">
+                <span>about</span>
+            </li>
+            <li class="footer__menu-elem">
+                <span>archive</span>
+            </li>
+            <li class="footer__menu-elem">
+                <a class="footer__menu-elem_clickable" href="contacts.html"><span>contact</span></a>
+            </li>
+            <li class="footer__menu-search"></li>
+        </ul>
+        
+        <div class="clearfix"></div>
+        
+        <section class="footer__caption">
+            <span class="caption__text">Nunc placerat dolor at lectus hendrerit dignissim. Ut tortor sem, consectetur nec hendrerit ut, ullamcorper ac odio. Donec viverra ligula at quam tincidunt imperdiet. Nulla mattis tincidunt auctor.</span>    
+        </section>
+        
+        <span class="footer__copyright">© 2015 - Palo Alto. All Rights Reserved. Designed & Developed by <span class="footer__copyright_white-text">PixelBuddha Team</span></span>
+        
+        <div class="share">
+            <ul>
+                <li class="share__button"><img src="images/fb.png" alt="fb"></li>
+                <li class="share__button"><img src="images/tw.png" alt="twitter"></li>
+                <li class="share__button"><img src="images/insta.png" alt="instagram"></li>
+                <li class="share__button"><img src="images/pt.png" alt="pinterest"></li>
+            </ul>
+            
+        </div>
     </footer>
-  </body>
+</body>
 </html>

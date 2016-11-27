@@ -164,9 +164,9 @@ body {
     padding-right: 100px;
 }
 
-.article__italic {
-    font-family: Lato;
-    font-size: 25px;
+.article__italic {    
+    color: rgba(0, 0, 0, 0.4);
+    font: 400 20px / 30px Lato;
     font-style: italic;
     line-height: 38px;
     text-align: left;   
@@ -205,10 +205,8 @@ body {
 }
 
 .article__quote {
-    font-family: Lato;
-    font-size: 20px; 
-    font-weight: 400;
-    line-height: 30px; 
+    color: rgba(0, 0, 0, 0.4);
+    font: 400 20px / 30px Lato;
     text-align: left;
     margin-left: 23px;
 }
@@ -388,4 +386,9 @@ body {
 .footer__menu-elem-no-underline {
     text-decoration: none;
     color: white;
+}
+
+.footer__menu-elem_clickable {
+    text-decoration: none;
+    color: #FFF;
 }
