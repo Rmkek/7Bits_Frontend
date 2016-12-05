@@ -5,6 +5,7 @@ body {
     padding-left: 210px;
     padding-right: 222px;
     padding-top: 88px;
+    margin: auto;
 }
 
 .header {
@@ -27,8 +28,8 @@ body {
     float: right;
     color: #333333;
     text-decoration: none;
-    font: 700 16px / 25px Lato;
-    border-bottom: 3px solid transparent;    
+    font: 700 16px / 25px Lato, serif, Georgia;
+    border-bottom: 3px solid transparent;
 }
 
 .menu__elem:hover {
@@ -85,13 +86,13 @@ body {
 
 .article__date {
     height: 15px;
-    font: 700 14px / 50px Lato;
+    font: 700 14px / 50px Lato, serif, Georgia;
     color: #bdbdbd;
     position: absolute;
 }
 
 .article__header {
-    font: 700 40px / 50px Lato;
+    font: 700 40px / 50px Lato, serif, Georgia;
     margin-top: 40px;
 }
 
@@ -104,18 +105,18 @@ body {
 
 .article__paragraph {
     margin-top: 40px;
-    font: 400 17px / 30px Lato;
+    font: 400 17px / 30px Lato, serif, Georgia;
 }
 
 .article__read-more {
     text-transform: uppercase;
     border: 1px none;
     float : left;
-    font: 700 21px / 50px Lato;
+    font: 700 21px / 50px Lato, serif, Georgia;
     color: #5c6bc0;
     border: none;
     background-color: white;
-    border: 1px solid transparent; 
+    border: 1px solid transparent;
     box-sizing: border-box;
 }
 
@@ -131,7 +132,7 @@ body {
 
 .article__hashtag {
     float: right;
-    font: 400 15px / 50px Lato;
+    font: 400 15px / 50px Lato, serif, Georgia;
     list-style-type: none;
     padding-left: 10px;
 }
@@ -164,12 +165,12 @@ body {
     padding-right: 100px;
 }
 
-.article__italic {    
+.article__italic {
     color: rgba(0, 0, 0, 0.4);
-    font: 400 20px / 30px Lato;
+    font: 400 20px / 30px Lato, serif, Georgia;
     font-style: italic;
     line-height: 38px;
-    text-align: left;   
+    text-align: left;
 }
 
 .article_image__left {
@@ -190,12 +191,12 @@ body {
 
 .article__paragraph_right {
     display: inline;
-    font: 400 17px / 30px Lato;
+    font: 400 17px / 30px Lato, serif, Georgia;
 }
 
 .article__paragraph_small-margin-top {
     margin-top: -36px;
-    font: 400 17px / 30px Lato;
+    font: 400 17px / 30px Lato, serif, Georgia;
 }
 
 .quote {
@@ -206,7 +207,7 @@ body {
 
 .article__quote {
     color: rgba(0, 0, 0, 0.4);
-    font: 400 20px / 30px Lato;
+    font: 400 20px / 30px Lato, serif, Georgia;
     text-align: left;
     margin-left: 23px;
 }
@@ -244,7 +245,7 @@ body {
     border: 1px solid transparent;
     text-decoration: none;
     margin-left: 35px;
-    font: 700 16px / 25px Lato;
+    font: 700 16px / 25px Lato, serif, Georgia;
     color: white;
     box-sizing: border-box;
 }
@@ -288,18 +289,18 @@ body {
 }
 
 .caption__text {
-    font: 400 13px / 23px Lato;
+    font: 400 13px / 23px Lato, serif, Georgia;
     color: rgb(255, 255, 255);
 }
 
 .footer__copyright {
     margin-top: 40px;
-    font: 400 14px / 30px Lato;
+    font: 400 14px / 30px Lato, serif, Georgia;
     color: rgb(255, 255, 255);
 }
 
 .footer__copyright_white-text {
-    font: 700 14px / 30px Lato;
+    font: 700 14px / 30px Lato, serif, Georgia;
     color: #ffffff;
     margin-top: 40px;
 }
@@ -332,7 +333,7 @@ body {
     display: block;
     position: absolute;
     background-color: #5c6bc0;
-    font-family: Lato;
+    font-family: Lato, serif, Georgia;
     color:  #ffffff;
     font-size: 14px;
     font-weight: 700;
@@ -364,7 +365,7 @@ body {
     display: block;
     position: absolute;
     background-color: #5c6bc0;
-    font-family: Lato;
+    font-family: Lato, serif, Georgia serif Georgia;
     color:  #ffffff;
     font-size: 14px;
     font-weight: 700;
@@ -391,4 +392,47 @@ body {
 .footer__menu-elem_clickable {
     text-decoration: none;
     color: #FFF;
+}
+
+@media (max-width: 1024px) {
+  body {
+      max-width: 1024px;
+      background-color: #f7f9fc;
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 88px;
+      margin: auto;
+  }
+
+  .footer {
+      display: block;
+      margin-top: 152px;
+      margin-left: -225px;
+      padding: 0;
+      position: absolute;
+      background-color: #5c6bc0;
+      height: 530px;
+      width: 125%;
+      text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      max-width: 480px;
+      background-color: #f7f9fc;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin: auto;
+  }
+
+  .footer {
+      display: block;
+      margin-left:-100px;
+      position: absolute;
+      background-color: #5c6bc0;
+      height: 530px;
+      width: 225%;
+      text-align: center;
+  }
 }
